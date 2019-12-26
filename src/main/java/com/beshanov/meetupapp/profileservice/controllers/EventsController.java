@@ -13,12 +13,12 @@ public class EventsController {
     @GetMapping("/events")
     public EventsIdsResponse getEventsForUser(@RequestParam String userId) {
         //идём в базу и находим все события, в которых участвует пользователь
-        List<Long> eventsIds = new ArrayList<>() {
+        List<String> eventsIds = new ArrayList<>() {
             {
-                add(1001L);
-                add(1002L);
-                add(1003L);
-                add(1004L);
+                add("5e0538a91a583c4259db443c");
+                add("5e05385bd7d81f1aac724257");
+                add("5e05351006672e000c3b85e8");
+                add("5e0534f89e83bd59ccb12590");
             }
         };
 
